@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 16px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    
+
+}
+.logo li{
+    list-style: none;
+   margin-inline: 25px ;
+   font-size: 19px;
+}
+.logo li:hover{
+    color: rgb(207, 18, 11);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.searchBar {
+    display: flex;
+}
+.searchBar input{
+    width: 220px;
+    padding: 6px;
+    font-size: 18px;
+    border:none;
+    border-radius: 3px;
+    margin-inline: 5px;
+
+}
+.searchBar button {
+    width: 60px;
+    height: 35px;
+    background-color: blue;
+    color: rgb(214, 17, 17);
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+@media only screen and( max-width:830px ){
+    li{
+        display: none;
+    }
+}
+@media only screen and( max-width:470px ){
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .logo{
+        justify-content: center;
+
+    }
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+}
